@@ -1,0 +1,24 @@
+.Pie{
+    display: block;
+    box-sizing: border-box;
+    background-color: black;
+    margin: 20px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.Pie > p{
+    display: block;
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 30px 0px;
+}
+.Pie > p > a{
+    text-decoration: none;
+    color: white;
+}

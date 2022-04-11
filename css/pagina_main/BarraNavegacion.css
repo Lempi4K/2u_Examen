@@ -1,0 +1,30 @@
+.ListaMenu{
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration: none;
+}
+.ListaMenu > li{
+    width: 25%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    list-style: none;
+    text-align: center;
+    border-right: 1px rgb(200, 200, 200) solid;
+}
+.ListaMenu > li:last-child{
+    border-right: 0px;
+}
+.ListaMenu > li > a{
+    display: block;
+    height: 100%;
+    font-size: 30px;
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+    background: -webkit-linear-gradient(top, rgb(255, 251, 0), rgb(255, 255, 255));
+}
+.ListaMenu > li > a:hover{
+    filter:brightness(1.2);
+}

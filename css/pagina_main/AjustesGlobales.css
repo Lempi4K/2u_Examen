@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    height: 100vh;
+}
+
+.ReguladorFlujo{
+    clear: both;
+}
+.Separador{
+    padding: 10px;
+}

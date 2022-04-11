@@ -1,0 +1,71 @@
+.Cuerpo{
+    display: block;
+    box-sizing: border-box;
+    width: 65%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.CuerpoTitulo{
+    border-bottom: 2px rgb(100, 100, 100) solid;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
+.ArticuloTitulo{
+    font-size: 27px;
+    padding: 5px 0;
+    font-family: 'Times New Roman';
+    border-bottom: 1px rgb(100, 100, 100) solid;
+}
+.ArticuloSubTitulo{
+    font-size: 20px;
+    padding: 5px 0;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+.ArticuloTexto{
+    margin: 5px 0;
+    font-family: Arial;
+    font-size: 18px;
+}
+li.ArticuloTexto{
+    margin-left: 30px;
+}
+.ArticuloImg{
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(200, 200, 200);
+}
+.ArticuloImg > img{
+    width: 300px;
+}
+.G{
+    float: left;
+}
+
+table{
+    width: 600px;
+    border: 1px rgb(0, 0, 0) solid;
+    margin-top: 10px;
+}
+th, td{
+    text-align: left;
+    border: 1px rgb(0, 0, 0) solid;
+    border-spacing: 0;
+    padding: 3px;
+}
+
+.CuerpoGeneral{
+    margin: 0% 5%;
+    height: 70vh;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
