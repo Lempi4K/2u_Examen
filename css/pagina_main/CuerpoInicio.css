@@ -1,0 +1,54 @@
+.Cuerpo{
+    background-color: rgb(200, 200, 200);   
+}
+.IArticulo{
+    margin: 0px 0px;
+}
+.IArtDatos{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px rgb(0,0,0) solid;
+    border-radius: 5px;
+    background-color: #059221;
+    z-index: 2;
+}
+.IArtDatos p:first-child{
+    font-family: "Time New Roman";
+    font-weight: bold;
+    color: white;
+    font-size: 23px;
+}
+.IArtDatos p:last-child{
+    font-weight: normal;
+    font-family: magneto;
+    color: white;
+    font-size: 15px;
+}
+.IArtPrincipal{
+    float: right;
+    transform: translate(0, -20px);
+    padding: 20px 20px 20px 20px;
+    border: 1px rgb(0,0,0) solid;
+    width: 98%;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 1;
+}
+.ArticuloImg > img{
+    width: 200px;
+}
+.ArtImgContenedor{
+    width: 200px;
+}
+.IArtLM{
+    position: absolute;
+    color: white;
+    background-color: rgb(128, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    bottom: 20px;
+    left: 40px;
+}

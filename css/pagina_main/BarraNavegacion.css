@@ -1,15 +1,16 @@
 .BarraNavegacion{
+    position: relative;
+    display: block;
     background: rgb(128, 0, 0);
     font-family: Arial;
     font-weight: bold;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: gray 5px 5px 20px;
-
+    z-index: 99;
+    box-shadow: gray 1px 5px 20px 0px;
 }
 .ListaMenu{
     box-sizing: border-box;
-    width: 100%;
     text-decoration: none;
     margin-left: 10px;
 }
@@ -57,7 +58,8 @@
     background-color: rgb(100, 100, 100);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: gray 1px 3px 3px 0px;
+    box-shadow: gray 3px 3px 10px 0px;
+    z-index: 1;
 }
 .ListaMenu > li > ul > li{
     text-align: left;
