@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Examen Unidad 2 Moreno Pinto Leonardo 4-N"/>
+    <meta name="keywords" content="Examen, LeonardoMorenoPinto, 4-N, Unidad 2"/>
+    <link rel="icon" href="../../recursos/img/Circulo.png"/>
+    <title>Configuracion - Enciclopedia 4K</title>
+    <style>
+        @import url("../../css/pagina_main/AjustesGlobales.css");
+        @import url("../../css/pagina_main/Titulo.css");
+        @import url("../../css/pagina_main/BarraNavegacion.css");
+        @import url("../../css/pagina_main/Cuerpo.css");
+        @import url("../../css/pagina_main/BarraLateral.css");
+        @import url("../../css/pagina_main/Pie.css");
+        @import url("../../css/especiales/SesionBTN.css");
+    </style>
+    <script src="../../js/JQuery.js"></script>
+    <script src="../../js/Configuraciones.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="E_20px"></div>
+    <div class="ContenedorAll" id="ContenedorAll">
+        <header class="Titulo">
+            <h1 class="TituloTexto"><a href="../../index.html">
+                <img src="../../recursos/img/Circulo.png"/>
+                Enciclopedia 4K</a></h1>
+        </header>
+        <nav class="BarraNavegacion">
+            <ul class="ListaMenu">
+                <li>
+                    <a href="../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Media</a>
+                    <ul>
+                        <li><a href="../imagenes.html">Imagenes</a></li>
+                        <li><a href="../videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Social</a>
+                    <ul>
+                        <li><a href="https://github.com/Lempi4K" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/Lempi_4K" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/leonaro.morenopinto/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" target="_blank">YouTube</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../contacto.html">Contacto</a></li>
+            </ul>
+            <div class="ReguladorFlujo"></div>
+        </nav>
+        <div class="Separador"></div>
+        <main>
+            <section class="CuerpoGeneral">
+                <div class="CuerpoTitulo"><h1>Configuracion</h1></div>
+                <div class="ArticuloTitulo"><p>Modo Hacker</p></div>
+                <label><input type="checkbox" id="chkbxMatrix" onchange="chkbxMatrix()"> Fondo tipo "Matrix"</label>
+                <br>
+                <input type="button" id="btnSubmitCS" name="btnSubmit" value="Cerrar Sesion" onclick="botonMandarCS()">
+            </section>
+        </main>
+        <footer class="Pie">
+            <p>Webmaster:<br>Leonardo Moreno Pinto (<a href="https://github.com/Lempi4K" target="_blank">Lempi4K</a>)</p>
+            <p>Semestre y Grupo:<br>4-N</p>
+            <p>Escuela:<br><a href="http://www.cbtis114.edu.mx/" target="_blank">C.B.T.I.S. #114</a></p>
+        </footer>
+    </div>
+    <div class="E_20px"></div>
+</body>
+</html>

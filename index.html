@@ -17,108 +17,114 @@
         @import url("css/pagina_main/CuerpoInicio.css");
         @import url("css/pagina_main/BarraLateralInicio.css");
     </style>
-    <script src="js/Sesion.js">
-    </script>
+    <script src="js/JQuery.js"></script>
+    <script src="js/Sesion.js"></script>
 </head>
 <body>
-    <header class="Titulo">
-        <h1 class="TituloTexto"><a href="index.html">
-            <img src="recursos/img/Circulo.png"/>
-            Enciclopedia 4K</a></h1>
-    </header>
-    <nav class="BarraNavegacion">
-        <ul class="ListaMenu">
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="html/servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="#">Media</a>
-                <ul>
-                    <li><a href="html/imagenes.html">Imagenes</a></li>
-                    <li><a href="html/videos.html">Videos</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Social</a>
-                <ul>
-                    <li><a href="https://github.com/Lempi4K" target="_blank">GitHub</a></li>
-                    <li><a href="https://twitter.com/Lempi_4K" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/leonaro.morenopinto/" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" target="_blank">YouTube</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="html/contacto.html">Contacto</a></li>
-        </ul>
-        <div class="ReguladorFlujo"></div>
-    </nav>
-    <div class="Separador"></div>
-    <main>
-        <section class="Cuerpo">
-            <article class="IArticulo" id="Articulo_Examen">
-                <div class="IArtDatos">
-                    <p>Articulo: Examen</p>
-                    <p>Publicado el 11/04/22</p>
-                </div>
-                <div class="IArtPrincipal">
-                    <div class="ArticuloImg">
-                        <img src="recursos/img/Test_(student_assessment).jpeg" />
-                        <div class="ArtImgContenedor">
-                            Estudiantes en Examen
-                        </div>
-                    </div>
-                    <p class="ArticuloTexto">Un examen es una prueba de conocimiento aptitudes, habilidades o de las capacidades físicas aprovechamiento de los estudios un ejemplo pueden ser los exámenes. En cualquier nivel educativo existe la necesidad de evaluar porque queremos conocer el aprovechamiento de lo enseñado, lo que conocemos como “dar notas”. La evaluación ofrece una oportunidad real de demostrar lo que los sujetos saben y cómo lo saben, pues el profesor podrá detectar los conocimientos adquiridos...</p>
-                    <a href="html/documentales/examen.html" class="IArtLM">Leer mas...</a>
-                </div>
-            </article>
-            <article class="IArticulo">
-                <div class="IArtDatos">
-                    <p>Video: César Vallejo en contexto</p>
-                    <p>Publicado el 02/04/22</p>
-                </div>
-                <div class="IArtPrincipal">
-                    <iframe src="https://www.youtube.com/embed/7ZyrzNwANDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="ArticuloTexto">Un hombre al cual lo hacen caer en una terrible depresión las niñas que no parecen de su edad, cambia de corriente intelectual como de calzones y cae en una funa falsa de su época; Acompáñame a poner a César Vallejo en contexto... <br><br>En esta ocasion se utilizo un formato diferente, fresco e interesante. Enjoy:)</p>
-                    <a href="https://youtu.be/7ZyrzNwANDY" target="_blank" class="IArtLM">Ver en YouTube</a>
-                </div>
-            </article>
+    <canvas id="canvas"></canvas>
+    <div class="E_20px"></div>
+    <div class="ContenedorAll"  id="ContenedorAll">
+        <header class="Titulo">
+            <h1 class="TituloTexto"><a href="index.html">
+                <img src="recursos/img/Circulo.png"/>
+                Enciclopedia 4K</a></h1>
+        </header>
+        <nav class="BarraNavegacion">
+            <ul class="ListaMenu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="html/servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Media</a>
+                    <ul>
+                        <li><a href="html/imagenes.html">Imagenes</a></li>
+                        <li><a href="html/videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Social</a>
+                    <ul>
+                        <li><a href="https://github.com/Lempi4K" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/Lempi_4K" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/leonaro.morenopinto/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" target="_blank">YouTube</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+                <li id="conf"><a href="html/sesion/usuario.html">Configuración</a></li>
+            </ul>
             <div class="ReguladorFlujo"></div>
-        </section>  
-        <aside class="BarraLateral">
-            <div class="BLTitulo"><h1>Mi Último Video</h1></div>
-            <a href="https://youtu.be/7ZyrzNwANDY" target="_blank" class="BLImg">
-                <img src="recursos/img/Miniatura.jpg"/>
-            </a>
-        </aside>
-        <aside class="BarraLateral">
-            <div class="BLTitulo"><h1>Mi Escuela</h1></div>
-            <a href="http://www.cbtis114.edu.mx/" target="_blank" class="BLImg">
-                <img src="recursos/img/slide-image-6.jpg"/>
-            </a>
-        </aside>
-        <aside class="BarraLateral">
-            <div class="BLTitulo"><h1>Iniciar Sesion</h1></div>
-            <div id="formulario">
-                <form>
-                    <div>
-                        <label>Usuario: <input type="text" placeholder="Ingresa tu usuario" id="txtUsuario" name="txtUsuario"></label>
+        </nav>
+        <div class="Separador"></div>
+        <main>
+            <section class="Cuerpo">
+                <article class="IArticulo" id="Articulo_Examen">
+                    <div class="IArtDatos">
+                        <p>Articulo: Examen</p>
+                        <p>Publicado el 11/04/22</p>
                     </div>
-                    <div>
-                        <label>Contraseña: <input type="password" placeholder="Ingresa tu contraseña" id="txtPass" name="txtPass"></label>
+                    <div class="IArtPrincipal">
+                        <div class="ArticuloImg">
+                            <img src="recursos/img/Test_(student_assessment).jpeg" />
+                            <div class="ArtImgContenedor">
+                                Estudiantes en Examen
+                            </div>
+                        </div>
+                        <p class="ArticuloTexto">Un examen es una prueba de conocimiento aptitudes, habilidades o de las capacidades físicas aprovechamiento de los estudios un ejemplo pueden ser los exámenes. En cualquier nivel educativo existe la necesidad de evaluar porque queremos conocer el aprovechamiento de lo enseñado, lo que conocemos como “dar notas”. La evaluación ofrece una oportunidad real de demostrar lo que los sujetos saben y cómo lo saben, pues el profesor podrá detectar los conocimientos adquiridos...</p>
+                        <a href="html/documentales/examen.html" class="IArtLM">Leer mas...</a>
                     </div>
-                    <input type="button" id="btnSubmit" name="btnSubmit" value="Iniciar Sesion" onclick="botonMandar()">
-                </form>
-            </div>
-        </aside>
-        <div class="ReguladorFlujo"></div>
-    </main>
-    <footer class="Pie">
-        <p>Webmaster:<br>Leonardo Moreno Pinto (<a href="https://github.com/Lempi4K" target="_blank">Lempi4K</a>)</p>
-        <p>Semestre y Grupo:<br>4-N</p>
-        <p>Escuela:<br><a href="http://www.cbtis114.edu.mx/" target="_blank">C.B.T.I.S. #114</a></p>
-    </footer>
+                </article>
+                <article class="IArticulo">
+                    <div class="IArtDatos">
+                        <p>Video: César Vallejo en contexto</p>
+                        <p>Publicado el 02/04/22</p>
+                    </div>
+                    <div class="IArtPrincipal">
+                        <iframe class="ArtVideo" src="https://www.youtube.com/embed/7ZyrzNwANDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="ArticuloTexto">Un hombre al cual lo hacen caer en una terrible depresión las niñas que no parecen de su edad, cambia de corriente intelectual como de calzones y cae en una funa falsa de su época; Acompáñame a poner a César Vallejo en contexto... <br><br>En esta ocasion se utilizo un formato diferente, fresco e interesante. Enjoy:)</p>
+                        <a href="https://youtu.be/7ZyrzNwANDY" target="_blank" class="IArtLM">Ver en YouTube</a>
+                    </div>
+                </article>
+                <div class="ReguladorFlujo"></div>
+            </section>  
+            <aside class="BarraLateral">
+                <div class="BLTitulo"><h1>Mi Último Video</h1></div>
+                <a href="https://youtu.be/7ZyrzNwANDY" target="_blank" class="BLImg">
+                    <img src="recursos/img/Miniatura.jpg"/>
+                </a>
+            </aside>
+            <aside class="BarraLateral">
+                <div class="BLTitulo"><h1>Mi Escuela</h1></div>
+                <a href="http://www.cbtis114.edu.mx/" target="_blank" class="BLImg">
+                    <img src="recursos/img/slide-image-6.jpg"/>
+                </a>
+            </aside>
+            <aside class="BarraLateral" id="IS">
+                <div class="BLTitulo"><h1>Iniciar Sesión</h1></div>
+                <div id="formulario">
+                    <form>
+                        <div>
+                            <label>Usuario: <input type="text" placeholder="Ingresa tu usuario" id="txtUsuario" name="txtUsuario"></label>
+                        </div>
+                        <div>
+                            <label>Contraseña: <input type="password" placeholder="Ingresa tu contraseña" id="txtPass" name="txtPass"></label>
+                        </div>
+                        <input type="button" id="btnSubmit" name="btnSubmit" value="Iniciar Sesion" onclick="botonMandar()">
+                    </form>
+                </div>
+            </aside>
+            <div class="ReguladorFlujo"></div>
+        </main>
+        <footer class="Pie">
+            <p>Webmaster:<br>Leonardo Moreno Pinto (<a href="https://github.com/Lempi4K" target="_blank">Lempi4K</a>)</p>
+            <p>Semestre y Grupo:<br>4-N</p>
+            <p>Escuela:<br><a href="http://www.cbtis114.edu.mx/" target="_blank">C.B.T.I.S. #114</a></p>
+        </footer>
+    </div>
+    <div class="E_20px"></div>
 </body>
+<script src="js/Verificador.js"></script>
 </html>

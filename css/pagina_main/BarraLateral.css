@@ -1,13 +1,14 @@
 .BarraLateral{
     box-sizing: border-box;
-    width: 20%;
-    margin-right: 5%;
+    width: 29%;
+    margin-right: 2%;
     float: right;
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 10px;
     padding: 15px 30px;
     margin-bottom: 20px;
     background-color: white;
+    box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 10px;
 }
 .BLTitulo{
     border-bottom: 2px rgb(0,0,0) solid;
@@ -16,10 +17,10 @@
     margin: 10px 0;
 }
 .BLItem{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .BLItemItem{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .BLItem > a, .BLItemItem > a{
     text-decoration: none;
