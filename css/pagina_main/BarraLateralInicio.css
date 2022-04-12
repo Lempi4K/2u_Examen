@@ -1,0 +1,20 @@
+#formulario{
+    margin: 20px 20px;
+}
+#formulario  div{
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+#btnSubmit{
+    float: right;
+    color: white;
+    background-color: #059221;
+    padding: 5px;
+    border-radius: 5px;
+}
+#txtUsuario, #txtPass{
+    border-radius: 3px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px black solid;
+}

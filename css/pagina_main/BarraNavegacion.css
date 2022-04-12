@@ -6,7 +6,7 @@
     font-weight: bold;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    z-index: 99;
+    z-index: 100;
     box-shadow: gray 1px 5px 20px 0px;
 }
 .ListaMenu{
@@ -58,8 +58,8 @@
     background-color: rgb(100, 100, 100);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: gray 3px 3px 10px 0px;
-    z-index: 1;
+    box-shadow: gray 3px 3px 5px 0px;
+    z-index: 80;
 }
 .ListaMenu > li > ul > li{
     text-align: left;

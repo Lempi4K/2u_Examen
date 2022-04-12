@@ -15,11 +15,14 @@
         @import url("css/pagina_main/BarraLateral.css");
         @import url("css/pagina_main/Pie.css");
         @import url("css/pagina_main/CuerpoInicio.css");
+        @import url("css/pagina_main/BarraLateralInicio.css");
     </style>
+    <script src="js/Sesion.js">
+    </script>
 </head>
 <body>
     <header class="Titulo">
-        <h1 class="TituloTexto"><a href="../../index.html">
+        <h1 class="TituloTexto"><a href="index.html">
             <img src="recursos/img/Circulo.png"/>
             Enciclopedia 4K</a></h1>
     </header>
@@ -55,14 +58,14 @@
     <div class="Separador"></div>
     <main>
         <section class="Cuerpo">
-            <article class="IArticulo">
+            <article class="IArticulo" id="Articulo_Examen">
                 <div class="IArtDatos">
                     <p>Articulo: Examen</p>
                     <p>Publicado el 11/04/22</p>
                 </div>
                 <div class="IArtPrincipal">
                     <div class="ArticuloImg">
-                        <img src="../../recursos/img/Test_(student_assessment).jpeg" />
+                        <img src="recursos/img/Test_(student_assessment).jpeg" />
                         <div class="ArtImgContenedor">
                             Estudiantes en Examen
                         </div>
@@ -71,9 +74,44 @@
                     <a href="html/documentales/examen.html" class="IArtLM">Leer mas...</a>
                 </div>
             </article>
+            <article class="IArticulo">
+                <div class="IArtDatos">
+                    <p>Video: César Vallejo en contexto</p>
+                    <p>Publicado el 02/04/22</p>
+                </div>
+                <div class="IArtPrincipal">
+                    <iframe src="https://www.youtube.com/embed/7ZyrzNwANDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="ArticuloTexto">Un hombre al cual lo hacen caer en una terrible depresión las niñas que no parecen de su edad, cambia de corriente intelectual como de calzones y cae en una funa falsa de su época; Acompáñame a poner a César Vallejo en contexto... <br><br>En esta ocasion se utilizo un formato diferente, fresco e interesante. Enjoy:)</p>
+                    <a href="https://youtu.be/7ZyrzNwANDY" target="_blank" class="IArtLM">Ver en YouTube</a>
+                </div>
+            </article>
             <div class="ReguladorFlujo"></div>
         </section>  
         <aside class="BarraLateral">
+            <div class="BLTitulo"><h1>Mi Último Video</h1></div>
+            <a href="https://youtu.be/7ZyrzNwANDY" target="_blank" class="BLImg">
+                <img src="recursos/img/Miniatura.jpg"/>
+            </a>
+        </aside>
+        <aside class="BarraLateral">
+            <div class="BLTitulo"><h1>Mi Escuela</h1></div>
+            <a href="http://www.cbtis114.edu.mx/" target="_blank" class="BLImg">
+                <img src="recursos/img/slide-image-6.jpg"/>
+            </a>
+        </aside>
+        <aside class="BarraLateral">
+            <div class="BLTitulo"><h1>Iniciar Sesion</h1></div>
+            <div id="formulario">
+                <form>
+                    <div>
+                        <label>Usuario: <input type="text" placeholder="Ingresa tu usuario" id="txtUsuario" name="txtUsuario"></label>
+                    </div>
+                    <div>
+                        <label>Contraseña: <input type="password" placeholder="Ingresa tu contraseña" id="txtPass" name="txtPass"></label>
+                    </div>
+                    <input type="button" id="btnSubmit" name="btnSubmit" value="Iniciar Sesion" onclick="botonMandar()">
+                </form>
+            </div>
         </aside>
         <div class="ReguladorFlujo"></div>
     </main>

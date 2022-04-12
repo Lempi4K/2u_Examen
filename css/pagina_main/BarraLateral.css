@@ -6,6 +6,8 @@
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 10px;
     padding: 15px 30px;
+    margin-bottom: 20px;
+    background-color: white;
 }
 .BLTitulo{
     border-bottom: 2px rgb(0,0,0) solid;
@@ -21,4 +23,12 @@
 }
 .BLItem > a, .BLItemItem > a{
     text-decoration: none;
+}
+.BLImg{
+}
+.BLImg > img{
+    margin-top: 20px;
+    width: 100%;
+    line-height: 0px;
+    border: 4px rgb(0, 0, 0) solid;
 }
