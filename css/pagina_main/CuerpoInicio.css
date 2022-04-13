@@ -3,16 +3,34 @@
     padding: 20px 20px;  
 }
 .IArticulo{
-    margin: 0px 0px;
+    display: block;
+    margin-bottom: 20px;
+}
+.Cuerpo > div:first-child{
+    margin-bottom: 0px;
+}
+.IArticulo > div{
+    display: block;
+    position: relative;
 }
 .IArtDatos{
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    float: left;
     padding: 10px 10px;
     border: 1px rgb(0,0,0) solid;
     border-radius: 5px;
     background-color: #059221;
-    z-index: 2;
+    z-index: 1;
+}
+.IArtPrincipal{
+    float: right;
+    margin-top: 49px;
+    padding: 20px 20px 20px 20px;
+    border: 1px rgb(0,0,0) solid;
+    width: 98%;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 0;
 }
 .IArtDatos p:first-child{
     font-family: "Time New Roman";
@@ -27,18 +45,13 @@
     color: white;
     font-size: 15px;
 }
-.IArtPrincipal{
-    float: right;
-    transform: translate(0, -20px);
-    padding: 20px 20px 20px 20px;
-    border: 1px rgb(0,0,0) solid;
-    width: 98%;
-    border-radius: 5px;
-    background-color: white;
-    z-index: 1;
-}
 .IArtPrincipal > p{
     font-size: 15px;
+}
+.ArticuloImg{
+    max-width: 200px;
+    max-height: 200px;
+
 }
 .ArticuloImg > img{
     width: 200px;

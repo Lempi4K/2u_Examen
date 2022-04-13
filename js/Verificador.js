@@ -20,6 +20,7 @@ function efectoMatrix(){
     }
     var body = document.querySelector("body");
     body.style.position="relative";
+    body.style.backgroundColor="rgb(0,0,0)"
     var contenedorAll = document.getElementById("ContenedorAll");
     contenedorAll.style.position="absolute";
     contenedorAll.style.top="0";  
@@ -28,7 +29,7 @@ function efectoMatrix(){
     contenedorAll.style.zIndex="0";
     var canvas = document.getElementById("canvas");
     canvas.style.display="block";
-    canvas.height = (document.getElementById("ContenedorAll").offsetHeight > 940)?(document.getElementById("ContenedorAll").offsetHeight + 380) : ($(document).height());
+    canvas.height = (document.getElementById("ContenedorAll").offsetHeight > 900)?(document.getElementById("ContenedorAll").offsetHeight+60) : ($(document).height());
     canvas.width = document.body.clientWidth;
     var columns = []
     for (i = 0; i < 256; columns[i++] = 1);
@@ -39,7 +40,7 @@ function efectoMatrix(){
             columns.map(function (value, index) {
                 var character = String.fromCharCode(3e4 + Math.random() * 33);
                 canvas.getContext('2d').fillText(character, index * 10, value);
-                columns[index] = value > 758 + Math.random() * 1e4 ? 0 : value + 10
+                columns[index] = value > 758 + Math.random() * 1e6 ? 0 : value + 10;
         })
     }
     setInterval(step, 33)

@@ -36,7 +36,7 @@ function efectoMatrix(){
             columns.map(function (value, index) {
                 var character = String.fromCharCode(3e4 + Math.random() * 33);
                 canvas.getContext('2d').fillText(character, index * 10, value);
-                columns[index] = value > 758 + Math.random() * 1e4 ? 0 : value + 10
+                columns[index] = value > 758 + Math.random() * 1e4 ? 0 : value + 10;
         })
     }
     setInterval(step, 33)
@@ -48,6 +48,7 @@ function efectoMatrixnt(){
     }
     var body = document.querySelector("body");
     body.style.position="static";
+    body.style.backgroundColor="rgb(255, 253, 201)";
     var contenedorAll = document.getElementById("ContenedorAll");
     contenedorAll.style.position="static";
     contenedorAll.style.top="0";  
@@ -69,10 +70,13 @@ function chkbxMatrix(){
 }
 function botonMandarCS(){
     document.cookie="inicio="+encodeURIComponent("cero")+"; max-age=0; path=/";
+    document.cookie="fxMatrix="+encodeURIComponent("cero")+"; max-age=0; path=/";
+    document.cookie="fxMatrix="+encodeURIComponent("cero")+"; max-age=0;";
     location.replace("../../index.html");
 }
 
 if(readCookie("fxMatrix")=="10"){
+    document.querySelector("body").style.backgroundColor="rgb(0,0,0)";
     document.getElementById("chkbxMatrix").checked=true;
     efectoMatrix()
 }
