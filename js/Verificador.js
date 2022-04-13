@@ -28,7 +28,7 @@ function efectoMatrix(){
     contenedorAll.style.zIndex="0";
     var canvas = document.getElementById("canvas");
     canvas.style.display="block";
-    canvas.height = $(document).height();
+    canvas.height = (document.getElementById("ContenedorAll").offsetHeight > 940)?(document.getElementById("ContenedorAll").offsetHeight + 380) : ($(document).height());
     canvas.width = document.body.clientWidth;
     var columns = []
     for (i = 0; i < 256; columns[i++] = 1);
@@ -48,12 +48,14 @@ function verificador(){
     var pestaña = document.getElementById("conf");
     var inicioSesion = document.getElementById("IS");
     //alert(readCookie("inicio")=="10")
-    if(readCookie("inicio")=="10"){
-        pestaña.style.display="block";
-        inicioSesion.style.display="none";
-    }else{
-        pestaña.style.display="none";
-        inicioSesion.style.display="block";
+    if(window.location=="http://127.0.0.1:5500/index.html"){
+        if(readCookie("inicio")=="10"){
+            pestaña.style.display="block";
+            inicioSesion.style.display="none";
+        }else{
+            pestaña.style.display="none";
+            inicioSesion.style.display="block";
+        }
     }
 
     if(readCookie("fxMatrix")=="10"){
