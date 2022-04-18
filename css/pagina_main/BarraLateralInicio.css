@@ -23,4 +23,12 @@
     border-bottom: 1px black solid;
     width: 80%;
     font-size: 15px;
+    border-radius: 0px;
+}
+#textoIS{
+    color: rgb(199, 0, 0);
+    font-size: 12px;
+    font-family: Arial;
+    margin-bottom: 20px;
+    text-align: center;
 }

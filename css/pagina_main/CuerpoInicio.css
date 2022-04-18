@@ -49,15 +49,10 @@
     font-size: 15px;
 }
 .ArticuloImg{
-    max-width: 200px;
-    max-height: 200px;
-
+    width: 200px;
 }
 .ArticuloImg > img{
-    width: 200px;
-}
-.ArtImgContenedor{
-    width: 200px;
+    width: 100%;
 }
 .IArtLM{
     float: right;
