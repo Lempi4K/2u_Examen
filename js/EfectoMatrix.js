@@ -29,6 +29,7 @@ function efectoMatrix(){
     }
     setInterval(step, 33);
     window.addEventListener("resize", function(){
+        canvas.height = (document.getElementById("ContenedorAll").offsetHeight > 900)?(document.getElementById("ContenedorAll").offsetHeight+60) : ($(document).height());
         canvas.width = document.body.clientWidth;
     });
 }

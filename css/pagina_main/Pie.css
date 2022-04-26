@@ -1,24 +1,38 @@
 .Pie{
     display: block;
     box-sizing: border-box;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin-top: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
 }
-.Pie > p{
+.Pie > div > p{
+    font-weight: bold;
+    color: #059221;
+    font-family: Arial;
+    text-align: center;
+}
+.Pie > div > p:last-child{
+    font-weight: normal;
+    font-size: 17px;
+    color: white;
+}
+.Pie > div > p > a{
+    text-decoration: none;
+    color: white;
+}
+.Pie > .PieDiv{
     display: block;
     float: left;
     width: 33.333%;
     text-align: center;
     color: white;
-    background-color: black;
     font-family: Arial;
     font-size: 20px;
-    padding: 30px 0px;
+    padding: 20px 0px;
+
 }
-.Pie > p > a{
-    text-decoration: none;
-    color: white;
+.Pie > div:last-child{
+    margin-bottom: 20px;
 }

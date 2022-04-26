@@ -22,10 +22,13 @@
     text-shadow: rgba(100, 100, 100, 0.75) 2px 2px 10px;
     box-sizing: border-box;
 }
-.TituloTexto > a > img{
+.TituloImg{
+    display: inline-block;
+    width: 70px;
     height: 70px;
-    vertical-align:text-bottom;
-
+    background-image: url("../../recursos/img/Circulo.png");
+    background-size: contain;
+    vertical-align: text-bottom;
 }
 .Titulo:hover{
     background-color: white;
