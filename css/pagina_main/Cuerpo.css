@@ -1,8 +1,10 @@
+main{
+    padding: 0 20px;
+}
 .Cuerpo{
     display: block;
     box-sizing: border-box;
-    width: 65%;
-    margin-left: 20px;
+    width: 650px;
     margin-right: 20px;
     float: left;
     border: 1px rgb(0, 0, 0) solid;
@@ -10,6 +12,7 @@
     padding: 15px 30px;
     background-color: white;
     box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 10px;
+    margin-bottom: 20px;
 }
 .CuerpoTitulo{
     border-bottom: 2px rgb(100, 100, 100) solid;
@@ -75,7 +78,7 @@ li.ArticuloTexto{
     width: 100%;
 }
 table{
-    width: 600px;
+    width: 100%;
     border: 1px rgb(0, 0, 0) solid;
     margin-top: 10px;
 }
@@ -87,12 +90,12 @@ th, td{
 }
 
 .CuerpoGeneral{
-    margin: 0% 20px;
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 10px;
     padding: 30px 30px;
     background-color: white;
     box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 10px;
+    margin-bottom: 20px;
 }
 .ArtVideo1{
     display:block;
@@ -124,4 +127,281 @@ th, td{
     float: left;
     line-height: normal;
     margin: 10px 10px;
+}
+
+/*150%*/
+@media screen and (max-width: 960px){
+    .Cuerpo{
+        width: 448px;
+    }
+    .CuerpoTitulo{
+        font-size: 25px;
+}
+    .ArticuloTitulo{
+        font-size: 22px;
+    }
+    .ArticuloSubTitulo{
+        font-size: 15px;
+    }
+    .ArticuloTexto{
+        font-size: 13px;
+    }
+    li.ArticuloTexto{
+        margin-left: 25px;
+    }
+    .ArticuloImg{
+        width: 200px;
+    }
+    .ArtImgContenedor{
+        height: 17.5px;
+        font-size: 13px;
+        bottom: -20px;
+    }
+    .ArticuloImg:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .G{
+        float: left;
+        width: 90px;
+    }
+    th, td{
+        font-size: 12px;
+    }
+    .ArtVideo1{
+        width: 400px; 
+        height: 225px;
+    }
+    .ArticuloImg2{
+        width: 400px;
+        margin: 20px auto;
+    }
+    .ArticuloImg2:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .Videos{
+        width: 150px;
+        height: 84.375px;
+        margin: 10px 10px;
+    }
+}
+
+/*200%*/
+@media screen and (max-width: 700px){
+    main{
+        padding: 0 15px;
+    }
+    .Cuerpo{
+        width: 100%;
+        padding: 10px 20px;
+        box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 7px;
+    }
+    .CuerpoTitulo{
+        font-size: 20px;
+    }
+    .ArticuloTitulo{
+        font-size: 17px;
+    }
+    .ArticuloSubTitulo{
+        font-size: 13px;
+    }
+    .ArticuloTexto{
+        font-size: 10px;
+    }
+    li.ArticuloTexto{
+        margin-left: 20px;
+    }
+    .ArticuloImg{
+        width: 150px;
+        border-width: 2.5px;
+    }
+    .ArtImgContenedor{
+        height: 12px;
+        font-size: 9px;
+        bottom: -20px;
+        -webkit-text-stroke: 0.7px black;
+    }
+    .ArticuloImg:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .CuerpoGeneral{
+        padding: 20px;
+    }
+    .G{
+        float: left;
+        width: 60px;
+    }
+    th, td{
+        font-size: 10px;
+    }
+    .ArtVideo1{
+        width: 300px; 
+        height: 168.75px;
+        border-width: 2.5px;
+    }
+    .ArticuloImg2{
+        width: 300px;
+        margin: 20px auto;
+        border-width: 2.5px;
+    }
+    .ArticuloImg2:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .Videos{
+        width: 120px;
+        height: 67.5px;
+        margin: 10px 10px;
+    }
+}
+
+/*300%*/
+@media screen and (max-width: 500px){
+    main{
+        padding: 0 10px;
+    }
+    .Cuerpo{
+        width: 100%;
+        padding: 5px 10px;
+        box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 7px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+    }
+    .CuerpoTitulo{
+        font-size: 12.5px;
+        border-bottom-width: 1px;
+    }
+    .ArticuloTitulo{
+        font-size: 10px;
+        padding-bottom: 2px;
+    }
+    .ArticuloSubTitulo{
+        font-size: 9px;
+    }
+    .ArticuloTexto{
+        font-size: 7px;
+    }
+    li.ArticuloTexto{
+        margin-left: 10px;
+    }
+    .ArticuloImg{
+        width: 100px;
+        border-width: 1.5px;
+    }
+    .ArtImgContenedor{
+        height: 8px;
+        font-size: 6.5px;
+        bottom: -20px;
+        -webkit-text-stroke: 0.5px black;
+    }
+    .ArticuloImg:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .CuerpoGeneral{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .G{
+        float: left;
+        width: 30px;
+        margin: 5px;
+        border-width: 1px;
+        border-radius: 1px;
+    }
+    th, td{
+        font-size: 7px;
+    }
+    .ArtVideo1{
+        width: 200px; 
+        height: 112.5px;
+        border-width: 2px;
+    }
+    .ArticuloImg2{
+        width: 200px;
+        margin: 20px auto;
+        border-width: 2px;
+    }
+    .ArticuloImg2:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .Videos{
+        width: 60px;
+        height: 33.75px;
+        margin: 5px 5px;
+    }
+}
+
+/*500%*/
+@media screen and (max-width: 300px){
+    main{
+        padding: 0 5px;
+    }
+    .Cuerpo{
+        width: 100%;
+        padding: 5px 10px;
+        box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 7px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    .CuerpoTitulo{
+        font-size: 12.5px;
+        border-bottom-width: 1px;
+    }
+    .ArticuloTitulo{
+        font-size: 10px;
+        padding-bottom: 2px;
+    }
+    .ArticuloSubTitulo{
+        font-size: 9px;
+    }
+    .ArticuloTexto{
+        font-size: 7px;
+    }
+    li.ArticuloTexto{
+        margin-left: 10px;
+    }
+    .ArticuloImg{
+        width: 100px;
+        border-width: 1.5px;
+    }
+    .ArtImgContenedor{
+        height: 8px;
+        font-size: 6.5px;
+        bottom: -20px;
+        -webkit-text-stroke: 0.5px black;
+    }
+    .ArticuloImg:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .CuerpoGeneral{
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .G{
+        float: left;
+        width: 30px;
+        margin: 5px;
+        border-width: 1px;
+        border-radius: 1px;
+    }
+    th, td{
+        font-size: 7px;
+    }
+    .ArtVideo1{
+        width: 200px; 
+        height: 112.5px;
+        border-width: 2px;
+    }
+    .ArticuloImg2{
+        width: 200px;
+        margin: 20px auto;
+        border-width: 2px;
+    }
+    .ArticuloImg2:hover .ArtImgContenedor{
+        transform: translate(0, -20px);
+    }
+    .Videos{
+        width: 60px;
+        height: 33.75px;
+        margin: 5px 5px;
+    }
 }

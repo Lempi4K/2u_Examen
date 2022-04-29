@@ -57,13 +57,30 @@
                     <a href="../contacto.html">Contacto</a></li>
             </ul>
             <div class="ReguladorFlujo"></div>
+            <select id="ListaBN" name="ListaBN" onchange="MenuBN()">
+                <option value="../../index.html" class="OpcionBN">Inicio</option>
+                <option value="../servicios.html" class="OpcionBN">Servicios</option>
+                <option value="#" class="OpcionBN">Media
+                    <option value="../imagenes.html" class="OpcionBN">&nbsp;&nbsp;Imagenes</option>
+                    <option value="../videos.html" class="OpcionBN">&nbsp;&nbsp;Videos</option>
+                </option>
+                <option value="#" class="OpcionBN">Social
+                    <option value="https://github.com/Lempi4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;GitHub</option>
+                    <option value="https://twitter.com/Lempi_4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Twitter</option>
+                    <option value="https://www.facebook.com/leonaro.morenopinto/" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Facebook</option>
+                    <option value="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;YouTube</option>
+                </option>
+                <option value="../contacto.html" class="OpcionBN">Contacto</option>
+                <option value="usuario.html" class="OpcionBN">Configuracion</option>
+            </select>
+            <div class="ReguladorFlujo"></div>
         </nav>
         <div class="Separador"></div>
         <main>
             <section class="CuerpoGeneral">
                 <div class="CuerpoTitulo"><h1>Configuracion</h1></div>
                 <div class="ArticuloTitulo"><p>Modo Hacker</p></div>
-                <label><input type="checkbox" id="chkbxMatrix" onchange="chkbxMatrix()"> Fondo tipo "Matrix"</label>
+                <label for="chkbxMatrix"><input type="checkbox" id="chkbxMatrix" onchange="chkbxMatrix()"> Fondo tipo "Matrix"</label>
                 <br>
                 <input type="button" id="btnSubmitCS" name="btnSubmit" value="Cerrar Sesion" onclick="botonMandarCS()">
             </section>
@@ -90,4 +107,5 @@
     <div class="E_20px"></div>
 </body>
 <script src="../../js/Configuraciones.js"></script>
+<script src="../../js/ListaBN.js"></script>
 </html>

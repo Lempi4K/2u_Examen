@@ -1,11 +1,10 @@
 .BarraLateral{
     box-sizing: border-box;
-    width: 29%;
-    margin-right: 2%;
+    width: 290px;
     float: right;
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     margin-bottom: 20px;
     background-color: white;
     box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 10px;
@@ -27,7 +26,7 @@
 }
 .BLImg{
     display: inline-block;
-    width: 248px;
+    width: 100%;
     line-height: 0px;
     margin-top: 20px;
     box-sizing: border-box;
@@ -35,4 +34,96 @@
 .BLImg > img{
     border: 4px rgb(0, 0, 0) solid;
     width: 100%;
+}
+
+/*150%*/
+@media screen and (max-width: 960px){
+    .BarraLateral{
+        width: 192px;
+        padding: 15px 20px;
+    }
+    .BLTitulo{
+        font-size: 15px;
+    }
+    .BLLista{
+        margin: 10px 0;
+        font-size: 11px;
+    }
+    .BLItem{
+        margin-left: 15px;
+    }
+    .BLItemItem{
+        margin-left: 25px;
+    }
+    .BLImg{
+        margin-top: 20px;
+
+    }
+    .BLImg > img{
+        border-width: 2.5px;
+    }
+}
+
+/*200%*/
+@media screen and (max-width: 700px){
+    .BarraLateral{
+        width: 136.5px;
+        padding: 8px 12px;
+        display: none;
+        box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 7px;
+    }
+    .BLTitulo{
+        font-size: 10px;
+    }
+    .BLLista{
+        margin: 10px 0;
+        font-size: 8px;
+    }
+    .BLItem{
+        margin-left: 10px;
+    }
+    .BLItemItem{
+        margin-left: 20px;
+    }
+    .BLImg{
+        margin-top: 15px;
+    }
+    .BLImg > img{
+        border-width: 2.5px;
+    }
+}
+
+/*300%*/
+@media screen and (max-width: 500px){
+    .BarraLateral{
+        width: 136.5px;
+        padding: 8px 12px;
+        display: none;
+        box-shadow: rgba(50, 50, 50, 0.5) 2px 2px 7px;
+        border-radius: 5px;
+    }
+    .BLTitulo{
+        font-size: 6px;
+        border-bottom-width: 1px;
+    }
+    .BLLista{
+        margin: 10px 0;
+        font-size: 8px;
+    }
+    .BLItem{
+        margin-left: 10px;
+    }
+    .BLItemItem{
+        margin-left: 20px;
+    }
+    .BLImg{
+        margin-top: 10px;
+    }
+    .BLImg > img{
+        border-width: 1px;
+    }
+}
+
+/*500%*/
+@media screen and (max-width: 300px){
 }

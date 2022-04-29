@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Examen Unidad 1 Moreno Pinto Leonardo 4-N"/>
-    <meta name="keywords" content="Examen, LeonardoMorenoPinto, 4-N, Unidad 1"/>
+    <meta name="description" content="Examen Unidad 2 Moreno Pinto Leonardo 4-N"/>
+    <meta name="keywords" content="Examen, LeonardoMorenoPinto, 4-N, Unidad 2"/>
     <link rel="icon" href="../recursos/img/Circulo.png"/>
     <title>Servicios - Enciclopedia 4K</title>
     <style>
@@ -55,6 +55,22 @@
                 <li>
                     <a href="contacto.html">Contacto</a></li>
             </ul>
+            <div class="ReguladorFlujo"></div>
+            <select id="ListaBN" name="ListaBN" onchange="MenuBN()">
+                <option value="../index.html" class="OpcionBN">Inicio</option>
+                <option value="servicios.html" class="OpcionBN">Servicios</option>
+                <option value="#" class="OpcionBN">Media
+                    <option value="imagenes.html" class="OpcionBN">&nbsp;&nbsp;Imagenes</option>
+                    <option value="videos.html" class="OpcionBN">&nbsp;&nbsp;Videos</option>
+                </option>
+                <option value="#" class="OpcionBN">Social
+                    <option value="https://github.com/Lempi4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;GitHub</option>
+                    <option value="https://twitter.com/Lempi_4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Twitter</option>
+                    <option value="https://www.facebook.com/leonaro.morenopinto/" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Facebook</option>
+                    <option value="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;YouTube</option>
+                </option>
+                <option value="contacto.html" class="OpcionBN">Contacto</option>
+            </select>
             <div class="ReguladorFlujo"></div>
         </nav>
         <div class="Separador"></div>
@@ -111,5 +127,6 @@
     </div>
     <div class="E_20px"></div>
     <script src="../js/Verificador.js"></script>
+    <script src="../js/ListaBN.js"></script>
 </body>
 </html>

@@ -2,7 +2,6 @@
     display: block;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
-    margin-top: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
@@ -35,4 +34,65 @@
 }
 .Pie > div:last-child{
     margin-bottom: 20px;
+}
+
+/*150%*/
+@media screen and (max-width: 960px){
+    .Pie{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .Pie > div > p{
+        font-size: 15px;
+    }
+    .Pie > div > p:last-child{
+        font-size: 12px;
+    }
+    .Pie > .PieDiv{
+        padding: 20px 0px;
+    }
+}
+
+/*200%*/
+@media screen and (max-width: 700px){
+    .Pie{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .Pie > div > p{
+        font-size: 11px;
+    }
+    .Pie > div > p:last-child{
+        font-size: 8px;
+    }
+    .Pie > div:last-child{
+        margin-bottom: 10px;
+    }
+    .Pie > .PieDiv{
+        padding: 10px 0px;
+    }
+}
+
+/*300%*/
+@media screen and (max-width: 500px){
+    .Pie{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .Pie > div > p{
+        font-size: 7px;
+    }
+    .Pie > div > p:last-child{
+        font-size: 5.5px;
+    }
+    .Pie > div:last-child{
+        margin-bottom: 10px;
+    }
+    .Pie > .PieDiv{
+        padding: 10px 0px;
+    }
+}
+
+/*500%*/
+@media screen and (max-width: 300px){
 }

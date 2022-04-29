@@ -1,6 +1,8 @@
 function efectoMatrix(){
     var separadores = document.getElementsByClassName("E_20px");
+    var espacioExtra = 0;
     for(var i=0; i<separadores.length; i++){
+        espacioExtra += separadores[i].offsetHeight;
         separadores[i].style.display="none"
     }
     var body = document.querySelector("body");
@@ -9,14 +11,14 @@ function efectoMatrix(){
     contenedorAll.style.position="absolute";
     contenedorAll.style.top="0";  
     contenedorAll.style.left="50%"; 
-    contenedorAll.style.transform="translate(-50%, 30px)"; 
+    contenedorAll.style.transform="translate(-50%, " + (espacioExtra/2) + "px)"; 
     contenedorAll.style.zIndex="0";
     var canvas = document.getElementById("canvas");
     canvas.style.display="block";
-    canvas.height = (document.getElementById("ContenedorAll").offsetHeight > 900)?(document.getElementById("ContenedorAll").offsetHeight+60) : ($(document).height());
-    canvas.width = document.body.clientWidth;
+    canvas.height = (document.getElementById("ContenedorAll").offsetHeight+espacioExtra > window.innerHeight)?(document.getElementById("ContenedorAll").offsetHeight+espacioExtra) : (window.innerHeight);
+    canvas.width = window.innerWidth;
     var columns = []
-    for (i = 0; i < 256; columns[i++] = 1);
+    for (i = 0; i < 600; columns[i++] = 1);
         function step() {
             canvas.getContext('2d').fillStyle = 'rgba(0,0,0,0.05)';
             canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height);
@@ -29,8 +31,15 @@ function efectoMatrix(){
     }
     setInterval(step, 33);
     window.addEventListener("resize", function(){
-        canvas.height = (document.getElementById("ContenedorAll").offsetHeight > 900)?(document.getElementById("ContenedorAll").offsetHeight+60) : ($(document).height());
+        espacioExtra = 0;
+        for(var i=0; i<separadores.length; i++){
+            separadores[i].style.display="block"
+            espacioExtra += separadores[i].offsetHeight;
+            separadores[i].style.display="none"
+        }
+        canvas.height = (document.getElementById("ContenedorAll").offsetHeight+espacioExtra > window.innerHeight)?(document.getElementById("ContenedorAll").offsetHeight+espacioExtra) : (window.innerHeight);
         canvas.width = document.body.clientWidth;
+        contenedorAll.style.transform="translate(-50%, " + (espacioExtra/2) + "px)"; 
     });
 }
 

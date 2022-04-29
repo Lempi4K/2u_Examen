@@ -76,3 +76,139 @@
     float: right;
     border: 4px rgb(0, 0, 0) solid;
 }
+
+/*150%*/
+@media screen and (max-width: 960px){
+    .Cuerpo{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .IArticulo{
+        width: 100%;
+    }
+    .IArtDatos{
+        padding: 10px 10px;
+    }
+    .IArtPrincipal{
+        margin-top: 49px;
+        padding: 20px;
+        width: 98%;
+    }
+    .IArtDatos p:first-child{
+        font-size: 23px;
+    }
+    .IArtDatos p:last-child{
+        font-size: 15px;
+    }
+    .IArtPrincipal > p{
+        font-size: 15px;
+    }
+    .ArticuloImg{
+        width: 150px;
+    }
+    .IArtLM{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .ArtVideo{
+        width: 250px;
+        height: 140.625px;
+        margin: 10px 10px;
+        border-width: 2.5px;
+    }
+}
+
+/*200%*/
+@media screen and (max-width: 700px){
+    .Cuerpo{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px 15px;  
+    }
+    .IArticulo{
+        width: 100%;
+    }
+    .IArtDatos{
+        padding: 7.5px 7.5px;
+    }
+    .IArtPrincipal{
+        margin-top: 36px;
+        padding: 15px;
+        width: 98%;
+    }
+    .IArtDatos p:first-child{
+        font-size: 18px;
+    }
+    .IArtDatos p:last-child{
+        font-size: 12px;
+    }
+    .IArtPrincipal > p{
+        font-size: 12px;
+    }
+    .ArticuloImg{
+        width: 125px;
+        border-width: 2.5px;
+    }
+    .IArtLM{
+        font-size: 12px;
+        padding: 4px;
+    }
+    .ArtVideo{
+        width: 200px;
+        height: 112.5px;
+        margin: 10px 10px;
+    }
+}
+
+/*300%*/
+@media screen and (max-width: 500px){
+    .Cuerpo{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 10px;  
+    }
+    .IArticulo{
+        width: 100%;
+    }
+    .IArtDatos{
+        padding: 5px 5px;
+    }
+    .IArtPrincipal{
+        margin-top: 20px;
+        padding: 15px;
+        width: 98%;
+    }
+    .IArtDatos p:first-child{
+        font-size: 12px;
+    }
+    .IArtDatos p:last-child{
+        font-size: 8px;
+    }
+    .IArtPrincipal > p{
+        font-size: 8px;
+    }
+    .ArticuloImg{
+        width: 90px;
+        margin: 5px;
+        border-width: 2px;
+    }
+    .IArtLM{
+        font-size: 8px;
+        padding: 3px;
+    }
+    .ArtVideo{
+        width: 125px;
+        height: 70.3125px;
+        margin: 5px 5px;
+        border-width: 2px;
+    }
+}
+
+/*500%*/
+@media screen and (max-width: 300px){
+    .Cuerpo{
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 10px 10px;  
+    }
+}

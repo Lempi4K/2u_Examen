@@ -21,7 +21,7 @@
     border: 0;
     outline: none;
     border-bottom: 1px black solid;
-    width: 80%;
+    width: 90%;
     font-size: 15px;
     border-radius: 0px;
 }
@@ -31,4 +31,134 @@
     font-family: Arial;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/*150%*/
+@media screen and (max-width: 960px){
+    .BarraLateral{
+        padding: 20px 20px;
+        width: 206.666px;
+        margin-right: 20px;
+        float: left;
+    }
+    #IS{
+        margin-right: 0px;
+    }
+    #formulario{
+        margin: 10px 10px;
+    }
+    #formulario  div{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    #btnSubmit{
+        padding: 5px;
+    }
+    #txtUsuario, #txtPass{
+        width: 90%;
+        font-size: 12px;
+    }
+    #textoIS{
+        font-size: 9px;
+        margin-bottom: 20px;
+        width: 100%
+    }
+}
+
+/*200%*/
+@media screen and (max-width: 700px){
+    .BarraLateral{
+        padding: 15px 15px;
+        width: 146.666px;
+        margin-right: 15px;
+        float: left;
+        display: block;
+    }
+    #IS{
+        margin-right: 0px;
+    }
+    #formulario{
+        margin: 7.5px;
+    }
+    #formulario  div{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    #btnSubmit{
+        padding: 2.5px;
+        font-size: 8px;
+        border-width: 1px;
+    }
+    #txtUsuario, #txtPass{
+        width: 90%;
+        font-size: 8px;
+    }
+    #textoIS{
+        font-size: 6px;
+        margin-bottom: 15px;
+    }
+}
+
+/*300%*/
+@media screen and (max-width: 500px){
+    .BarraLateral{
+        padding: 10px 10px;
+        width: 95px;
+        margin-right: 10px;
+        float: left;
+        display: block;
+    }
+    #IS{
+        margin-right: 0px;
+    }
+    #formulario{
+        margin: 4px;
+    }
+    #formulario  div{
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+    #btnSubmit{
+        padding: 2px;
+        font-size: 6px;
+        border-width: 0.8px;
+        border-radius: 2.5px;
+    }
+    #txtUsuario, #txtPass{
+        width: 90%;
+        font-size: 5.5px;
+        border-bottom-width: 0.7px;
+    }
+    #textoIS{
+        font-size: 4px;
+        margin-bottom: 10px;
+    }
+}
+
+/*500%*/
+@media screen and (max-width: 300px){
+    main > aside{
+        padding: 10px 10px;
+        float: left;
+        display: block;
+    }
+    .BarraLateral:last-child{
+        width: 100%;
+    }
+    #a1{
+        width: 49%;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    #a2{
+        width: 49%;
+        margin-right: 0px;
+        float: right;
+        margin-bottom: 5px;
+    }
+    #IS{
+        width: 100%;
+        margin-bottom: 5px;
+
+    }
 }
