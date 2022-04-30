@@ -33,7 +33,20 @@ overflow-x: hidden;
 .E_20px{
     padding: 15px;
 }
-
+#SBArriba{
+    position:fixed;
+    background-color: rgb(128, 0, 0);
+    width: 30px;
+    height: 27px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url("../../recursos/img/image.png");
+    background-size: cover;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out 0s;
+}
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     
@@ -72,6 +85,9 @@ overflow-x: hidden;
     }
     .E_20px{
         padding: 10px;
+    }
+    #SBArriba{
+        display: none;
     }
 }
 
