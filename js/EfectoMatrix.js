@@ -31,15 +31,17 @@ function efectoMatrix(){
     }
     setInterval(step, 33);
     window.addEventListener("resize", function(){
-        espacioExtra = 0;
-        for(var i=0; i<separadores.length; i++){
-            separadores[i].style.display="block"
-            espacioExtra += separadores[i].offsetHeight;
-            separadores[i].style.display="none"
+        if(this.document.getElementById("chkbxMatrix").checked){
+            espacioExtra = 0;
+            for(var i=0; i<separadores.length; i++){
+                separadores[i].style.display="block"
+                espacioExtra += separadores[i].offsetHeight;
+                separadores[i].style.display="none"
+            }
+            canvas.height = (document.getElementById("ContenedorAll").offsetHeight+espacioExtra > window.innerHeight)?(document.getElementById("ContenedorAll").offsetHeight+espacioExtra) : (window.innerHeight);
+            canvas.width = document.body.clientWidth;
+            contenedorAll.style.transform="translate(-50%, " + (espacioExtra/2) + "px)"; 
         }
-        canvas.height = (document.getElementById("ContenedorAll").offsetHeight+espacioExtra > window.innerHeight)?(document.getElementById("ContenedorAll").offsetHeight+espacioExtra) : (window.innerHeight);
-        canvas.width = document.body.clientWidth;
-        contenedorAll.style.transform="translate(-50%, " + (espacioExtra/2) + "px)"; 
     });
 }
 
