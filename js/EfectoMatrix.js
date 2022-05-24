@@ -31,7 +31,7 @@ function efectoMatrix(){
     }
     setInterval(step, 33);
     window.addEventListener("resize", function(){
-        if(this.document.getElementById("chkbxMatrix").checked){
+        if(readCookie("fxMatrix")=="10"){
             espacioExtra = 0;
             for(var i=0; i<separadores.length; i++){
                 separadores[i].style.display="block"

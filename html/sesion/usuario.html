@@ -19,8 +19,16 @@
     <script src="../../js/JQuery.js"></script>
     <script src="../../js/LectorCookies.js"></script>
     <script src="../../js/EfectoMatrix.js"></script>
+    <script src="../../js/Configuraciones.js"></script>
+    <script src="../../js/ListaBN.js"></script>
+    <script src="../../js/SBArriba.js"></script>
+    <script src="../../js/ImagenCarga.js"></script>
 </head>
 <body>
+    <div id="EscenaCarga">
+        <div id="animacionCarga"></div>
+    </div>
+    <script src="../../js/FondoNegro.js"></script>
     <canvas id="canvas"></canvas>
     <div class="E_20px"></div>
     <div class="ContenedorAll" id="ContenedorAll">
@@ -79,8 +87,14 @@
         <main>
             <section class="CuerpoGeneral">
                 <div class="CuerpoTitulo"><h1>Configuracion</h1></div>
-                <div class="ArticuloTitulo"><p>Modo Hacker</p></div>
-                <label for="chkbxMatrix"><input type="checkbox" id="chkbxMatrix" onchange="chkbxMatrix()"> Fondo tipo "Matrix"</label>
+                <article id="ModoHacker">
+                    <div class="ArticuloTitulo"><p>Modo Hacker</p></div>
+                    <label for="chkbxMatrix"><input type="checkbox" id="chkbxMatrix" onchange="chkbxMatrix"> Fondo tipo "Matrix"</label>
+                </article>
+                <article id="PatioDeJuegos">
+                    <div class="ArticuloTitulo"><p>Patio de Juegos</p></div>
+                    <li class="ArtEnlace"><a href="derivados/PatioDeJuegos.html">Ir al sitio</a></li>
+                </article>
                 <br>
                 <input type="button" id="btnSubmitCS" name="btnSubmit" value="Cerrar Sesion" onclick="botonMandarCS()">
             </section>
@@ -106,8 +120,5 @@
     </div>
     <div id="SBArriba"></div>
     <div class="E_20px"></div>
-    <script src="../../js/Configuraciones.js"></script>
-    <script src="../../js/ListaBN.js"></script>
-    <script src="../../js/SBArriba.js"></script>
 </body>
 </html>

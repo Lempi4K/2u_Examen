@@ -1,0 +1,197 @@
+.EjmContenedor{
+    width: 100%;
+    margin-top: 20px;
+}
+.EjmContenedor > iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+
+}
+#inpForm > div{
+    width: calc(25% - 1rem);
+    margin: 0.5rem 0.5rem;
+    height: 200px;
+    float:left;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+#inpForm > div > .ArticuloSubTitulo{
+    text-align: center;
+}
+input[type="button"], button{
+    color: white;
+    background-color: #059221;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    transition: background-color 0.05s ease-in-out;
+ }
+ input[type="button"]:active, button:active{
+    background-color: #05761b;
+ }
+
+ input[type="reset"], input[type="submit"]{
+    color: white;
+    background-color: rgb(150, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.05s ease-in-out;
+ }
+input[type="reset"]:active, input[type="submit"]:active{
+    background-color: rgb(112, 0, 0);
+}
+input[type="button"], input[type="reset"], input[type="submit"]{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+#btnMayusTxt{
+    float: left;
+    margin: 10px 20px;
+}
+#btnMinusTxt{
+   float: right;
+   margin: 10px 20px;
+}
+.inpIMG{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.inpIMG > img{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type="range"], .btnGrpRdbtnCPP, .btnGrpRdbtnPHP{
+    height: 10%;
+}
+#inpForm > div > label{
+    font-family: arial;
+    margin-bottom: 10px;
+}
+.btnGrpRdbtnCPP{
+    float: left;
+}
+.btnGrpRdbtnPHP{
+    float: right;
+}
+.inpTxtPassColNum{
+    width: 100%;
+}
+
+input[type="text"], input[type="password"], input[type="search"], input[type="number"], select{
+    height: 25px;
+    width: 100%;
+    outline: none;
+    padding: 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+input[type="number"]{
+    padding-right: 0px;
+}
+select{
+    padding:2px 10px
+}
+input[type="color"], input[type="range"]{
+    width: 100%;
+}
+.inpTxtPassColNum > input[type="search"]{
+    width: 65%;
+    background-color: white;
+    background-image: url('../../recursos/img/GIcon.png');
+    background-position: 5px 0px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 12px 5px 12px 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out
+}
+.inpTxtPassColNum > input[type="search"]:focus{
+    width: 100%;
+}
+.inpNumDiv{
+    margin-bottom: 10px;
+}
+.inpNumDiv > label{
+    font-family: arial;
+}
+#inpNumPDiv{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px 5px;
+
+}
+#lblInpNumP{
+    float: right;
+}
+.seccForm{
+    width: calc(50% - 1rem);
+    margin: 0.5rem 0.5rem;
+    float: left;
+}
+#txtArea{
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+    height: 98px;
+    resize: none;
+    padding: 10px;
+}
+.numSlctBtnOtpt{
+    width: 30%;
+}
+.SlctBtnOtptFlotador{
+    display: block;
+    margin: 10px auto;
+}
+.SlctBtnOtptFlotador > div{
+    float: left;
+    margin: 0px 10px;
+}
+#slctOp{
+    height: 100%;
+}
+#btnResu{
+    float: right;
+    margin-right: 10px;
+}
+#opt > fieldset{
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+    padding-left: 7px;
+}
+#mtr{
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+}
+#mtr > meter{
+    width: 100%;
+}
+.mtrBtns #btnMtrR10{
+    float: left;
+    margin-left: 100px;
+}
+.mtrBtns #btnMtrS10{
+    float: right;
+    margin-right: 100px;
+}
+#pgr{
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+}
+#pgr > progress{
+    width: 100%;
+}
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #ccc;
+}

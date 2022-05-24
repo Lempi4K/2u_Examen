@@ -18,8 +18,16 @@
     <script src="../js/JQuery.js"></script>
     <script src="../js/LectorCookies.js"></script>
     <script src="../js/EfectoMatrix.js"></script>
+    <script src="../js/Verificador.js"></script>
+    <script src="../js/ListaBN.js"></script>
+    <script src="../js/SBArriba.js"></script>
+    <script src="../js/ImagenCarga.js"></script>
 </head>
 <body>
+    <div id="EscenaCarga">
+        <div id="animacionCarga"></div>
+    </div>
+    <script src="../js/FondoNegro.js"></script>
     <canvas id="canvas"></canvas>
     <div class="E_20px"></div>
     <div class="ContenedorAll" id="ContenedorAll">
@@ -59,10 +67,9 @@
             <select id="ListaBN" name="ListaBN" onchange="MenuBN()">
                 <option value="../index.html" class="OpcionBN">Inicio</option>
                 <option value="servicios.html" class="OpcionBN">Servicios</option>
-                <option value="#" class="OpcionBN">Media
-                    <option value="imagenes.html" class="OpcionBN">&nbsp;&nbsp;Imagenes</option>
-                    <option value="videos.html" class="OpcionBN">&nbsp;&nbsp;Videos</option>
-                </option>
+                <option value="#" class="OpcionBN">Media</option>
+                <option value="imagenes.html" class="OpcionBN">&nbsp;&nbsp;Imagenes</option>
+                <option value="videos.html" class="OpcionBN">&nbsp;&nbsp;Videos</option>
                 <option value="#" class="OpcionBN">Social
                     <option value="https://github.com/Lempi4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;GitHub</option>
                     <option value="https://twitter.com/Lempi_4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Twitter</option>
@@ -103,8 +110,5 @@
     </div>
     <div id="SBArriba"></div>
     <div class="E_20px"></div>
-    <script src="../js/Verificador.js"></script>
-    <script src="../js/ListaBN.js"></script>
-    <script src="../js/SBArriba.js"></script>
 </body>
 </html>

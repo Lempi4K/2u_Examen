@@ -1,4 +1,5 @@
-var SBBtn = document.getElementById("SBArriba");
+function eventos(){
+    var SBBtn = document.getElementById("SBArriba");
 SBBtn.addEventListener("click", scrollArriba);
 function scrollArriba(){
     var scrollActual = document.documentElement.scrollTop;
@@ -9,12 +10,15 @@ function scrollArriba(){
     }
 }
 
-window.onscroll = function(){
+window.addEventListener("scroll", function(){
     if(document.documentElement.scrollTop < 100){
         SBBtn.style.transform = "scale(0)";
     }
     else{
         SBBtn.style.transform = "scale(1)";
     }
-};
+});
+}
+
+window.addEventListener("load", eventos);
 

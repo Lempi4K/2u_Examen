@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Examen Unidad 2 Moreno Pinto Leonardo 4-N"/>
+    <meta name="keywords" content="Examen, LeonardoMorenoPinto, 4-N, Unidad 2"/>
+    <link rel="icon" href="../../../recursos/img/Circulo.png"/>
+    <title>Patio de Juegos - Enciclopedia 4K</title>
+    <style>
+        @import url("../../../css/pagina_main/AjustesGlobales.css");
+        @import url("../../../css/pagina_main/Titulo.css");
+        @import url("../../../css/pagina_main/BarraNavegacion.css");
+        @import url("../../../css/pagina_main/Cuerpo.css");
+        @import url("../../../css/pagina_main/BarraLateral.css");
+        @import url("../../../css/pagina_main/Pie.css");
+        @import url("../../../css/especiales/PatioDeJuegos.css");
+    </style>
+    <script src="../../../js/JQuery.js"></script>
+    <script src="../../../js/LectorCookies.js"></script>
+    <script src="../../../js/EfectoMatrix.js"></script>
+    <script src="../../../js/Verificador.js"></script>
+    <script src="../../../js/ListaBN.js"></script>
+    <script src="../../../js/SBArriba.js"></script>
+    <script src="../../../js/ImagenCarga.js"></script>
+    <script src="../../../js/Patio de Juegos/InpTxt.js"></script>
+    <script src="../../../js/Patio de Juegos/InpSch.js"></script>
+    <script src="../../../js/Patio de Juegos/InpNum.js"></script>
+    <script src="../../../js/Patio de Juegos/InpRan.js"></script>
+    <script src="../../../js/Patio de Juegos/InpPass.js"></script>
+    <script src="../../../js/Patio de Juegos/InpCol.js"></script>
+    <script src="../../../js/Patio de Juegos/InpChkbx.js"></script>
+    <script src="../../../js/Patio de Juegos/InpRdbtn.js"></script>
+    <script src="../../../js/Patio de Juegos/InpBtn.js"></script>
+    <script src="../../../js/Patio de Juegos/inpRes.js"></script>
+    <script src="../../../js/Patio de Juegos/Textarea.js"></script>
+    <script src="../../../js/Patio de Juegos/SlctBtnOtpt.js"></script>
+    <script src="../../../js/Patio de Juegos/Metter.js"></script>
+    <script src="../../../js/Patio de Juegos/Progress.js"></script>
+</head>
+<body>
+    <div id="EscenaCarga">
+        <div id="animacionCarga"></div>
+    </div>
+    <script src="../../../js/FondoNegro.js"></script>
+    <canvas id="canvas"></canvas>
+    <div class="E_20px"></div>
+    <div class="ContenedorAll" id="ContenedorAll">
+        <header class="Titulo">
+            <h1 class="TituloTexto"><a href="../../../index.html">
+                <div class="TituloImg"></div>
+                Enciclopedia 4K</a></h1>
+        </header>
+        <nav class="BarraNavegacion">
+            <ul class="ListaMenu">
+                <li>
+                    <a href="../../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../../servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Media</a>
+                    <ul>
+                        <li><a href="../../imagenes.html">Imagenes</a></li>
+                        <li><a href="../../videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Social</a>
+                    <ul>
+                        <li><a href="https://github.com/Lempi4K" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/Lempi_4K" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/leonaro.morenopinto/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" target="_blank">YouTube</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../contacto.html">Contacto</a>
+                </li>
+                <li id="conf" style="display:block;"><a href="../usuario.html">Configuración</a></li>
+            </ul>
+            <div class="ReguladorFlujo"></div>
+            <select id="ListaBN" name="ListaBN">
+                <option value="../../../index.html" class="OpcionBN">Inicio</option>
+                <option value="../../servicios.html" class="OpcionBN">Servicios</option>
+                <option value="#" class="OpcionBN">Media
+                    <option value="../../imagenes.html" class="OpcionBN">&nbsp;&nbsp;Imagenes</option>
+                    <option value="../../videos.html" class="OpcionBN">&nbsp;&nbsp;Videos</option>
+                </option>
+                <option value="#" class="OpcionBN">Social
+                    <option value="https://github.com/Lempi4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;GitHub</option>
+                    <option value="https://twitter.com/Lempi_4K" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Twitter</option>
+                    <option value="https://www.facebook.com/leonaro.morenopinto/" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;Facebook</option>
+                    <option value="https://www.youtube.com/channel/UCfTDgMStJADC04VFwjy9VVA/" class="OpcionBN" id="OBNBlank">&nbsp;&nbsp;YouTube</option>
+                </option>
+                <option value="../../contacto.html" class="OpcionBN">Contacto</option>
+                <option value="../usuario.html" class="OpcionBN">Configuracion</option>
+                <option value="PatioDeJuegos.html" class="OpcionBN">Patio de Juegos</option>
+            </select>
+            <div class="ReguladorFlujo"></div>
+        </nav>
+        <div class="Separador"></div>
+        <main>
+            <section class="CuerpoGeneral">
+                <div class="CuerpoTitulo"><h1>Patio de Juegos</h1></div>
+                <article id="Input">
+                    <div class="ArticuloTitulo"><p>Input</p></div>
+                        <form action="../../../index.html" method="get" id="inpForm">
+                        <div id="InpTtext">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "text"</p></div>
+                            <label for="inpTxt">Texto: </label>
+                            <div class="inpTxtPassColNum">
+                                <input type="text" placeholder="Ingresa un texto" id="inpTxt">
+                            </div>
+                            <input type="button" value="Mayus" id="btnMayusTxt">
+                            <input type="button" value="Minus" id="btnMinusTxt">
+                            <div class="ReguladorFlujo"></div>
+                        </div>
+                        <div id="InpTsearch">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "search"</p></div>
+                            <label for="inpSch">Busqueda en Google: </label>
+                            <div class="inpTxtPassColNum">
+                                <input type="search" placeholder="Buscar" id="inpSch">
+                            </div>
+                            <input type="button" value="Buscar" id="btnBuscarSch">
+                        </div>
+                        <div id="InpTnumber">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "number"</p></div>
+                            <div class="inpNumDiv">
+                                <label for="inpNum1">Num 1:</label>
+                                <input type="number" value="0" max="10" min="0" id="inpNum1">
+                            </div>
+                            <div class="inpNumDiv">
+                                <label for="inpNum2">Num 2:</label>
+                                <input type="number" value="0" max="10" min="0" id="inpNum2">
+                            </div>
+                            <div id="inpNumPDiv">
+                                <label for="lblInpNumP">Resultado: </label>
+                                <label id="lblInpNumP"></label>
+                                <div class="ReguladorFlujo"></div>
+                            </div>
+                        </div>
+                        <div id="InpTrange">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "range"</p></div>
+                            <div class="inpTxtPassColNum">
+                                <input type="range" min="0" max="100" value="50" id="inpRan">
+                            </div>
+                            <div class="inpIMG">
+                                <img src="../../../recursos/img/EjwEslcXsAEYoNM.jpg" id="imgInpRan" style="height: 50%">
+                            </div>
+                        </div>
+                        <div id="InpTpassword">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "password"</p></div>
+                            <div class="inpTxtPassColNum">
+                                <input type="password" id="inpPass" placeholder="Contraseña">
+                            </div>
+                            <input type="button" id="btnInpPass" value="Revelar">
+                        </div>
+                        <div id="InpTcolor">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "color"</p></div>
+                            <label for="inpCol">Color del fondo: </label>
+                            <div class="inpTxtPassColNum">
+                                <input type="color" id="inpCol" value="#fffdc9">
+                            </div>
+                            <p>(Quita el "Modo Hacker")</p>
+                        </div>
+                        <div id="InpTcheckbox">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "checkbox"</p></div>
+                            <div class="inpTxtPassColNum">
+                                <input type="text" placeholder="Ingresa un texto" id="txtInpChkbx">
+                            </div>
+                            <br>
+                            <input type="checkbox" id="inpChkbxItalic">
+                            <label for="inpChkbxItalic" style="font-style:italic;">Cursiva</label>
+                            <br>
+                            <input type="checkbox" id="inpChkbxBold">
+                            <label for="inpChkbxBold" style="font-weight:bold;">Negrita</label>
+                            <br>
+                            <input type="checkbox" id="inpChkbxSub">
+                            <label for="inpChkbxSub" style="text-decoration: underline;">Subrayado</label>
+                        </div>
+                        <div id="InpTradio">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "radio"</p></div>
+                            <div class="btnGrpRdbtnCPP">
+                                <input type="radio" id="inpRdbtnCPP" name="rdbtn" checked>
+                                <label for="inpRdbtnCPP">C++</label>
+                            </div>
+                            <div class="btnGrpRdbtnPHP">
+                                <input type="radio" id="inpRdbtnPHP" name="rdbtn">
+                                <label for="inpRdbtnPHP">PHP</label>
+                            </div>
+                            <div class="ReguladorFlujo"></div>
+                            <div class="inpIMG">
+                                <img src="../../../recursos/img/1200px-ISO_C++_Logo.svg.png" id="imgInpRdbtn">
+                            </div>
+                        </div>
+                        <div id="InpTbutton">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "button"</p></div>
+                            <input type="button" value="#InpTbutton" id="inpBtn">
+                        </div>
+                        <div id="InpTsubmit">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "submit"</p></div>
+                            <input type="submit">
+                        </div>
+                        <div id="InpTreset">
+                            <div class="ArticuloSubTitulo"><p>Tipo: "reset"</p></div>
+                            <input type="reset" id="inpRes">
+                        </div>
+                    </form>
+                    <div class="ReguladorFlujo"></div>
+                </article>
+                <article id="Textarea" class="seccForm">
+                    <div class="ArticuloTitulo"><p>Textarea</p></div>
+                    <form>
+                        <div id="TxtArea">
+                            <textarea placeholder="Ingresa un texto" id="txtArea" r></textarea>
+                        </div>
+                    </form>
+                </article>
+                <article id="SlctBtnOtpt"  class="seccForm">
+                    <div class="ArticuloTitulo"><p>Select, Button y Output</p></div>
+                    <form>
+                        <div id="xd">
+                            <div class="SlctBtnOtptFlotador">
+                                <div class="numSlctBtnOtpt">
+                                    <input type="number" id="optNum1" value="0">
+                                </div>
+                                <div id="slct">
+                                    <select id="slctOp">
+                                        <option>+</option>
+                                        <option>-</option>
+                                        <option>*</option>
+                                        <option>/</option>
+                                    </select>
+                                </div>
+                                <div class="numSlctBtnOtpt">
+                                    <input type="number" id="optNum2" value="0">
+                                </div>
+                                <div class="ReguladorFlujo"></div>
+                            </div>
+                        </div>
+                        
+                        <div id="btn">
+                            <button id="btnResu" type="button">Resultado</button>
+                        </div>
+                        <div class="ReguladorFlujo"></div>
+                        <div id="opt">
+                            <fieldset>
+                                <legend>Salida</legend>
+                                <label for="otptResultado">Resultado: </label>
+                                <output id="otptResultado" for="optnum1 optnum2"></output>
+                            </fieldset>
+                        </div>
+                    </form>
+                </article>
+                <article id="Meter"  class="seccForm">
+                    <div class="ArticuloTitulo"><p>Meter</p></div>
+                    <form>
+                        <div id="mtr">
+                            <meter id="mtrBar" value="50" max="100" min="0" low="30" high="70">50%</meter>
+                        </div>
+                        <div class="mtrBtns">
+                            <input type="button" value="-10" id="btnMtrR10">
+                            <input type="button" value="+10" id="btnMtrS10">
+                            <div class="ReguladorFlujo"></div>
+                        </div>
+                    </form>
+                </article>
+                <article id="Progress" class="seccForm">
+                    <div class="ArticuloTitulo"><p>Progress</p></div>
+                    <form>
+                        <div id="pgr">
+                            <progress id="pgrBar" value="0" max="100">0%</progress>
+                        </div>
+                    </form>
+                </article>
+                <div class="ReguladorFlujo"></div>
+                <article id="EjmReal">
+                    <div class="ArticuloTitulo"><p>Ejemplo Real</p></div>
+                    <div class="EjmContenedor">
+                        <iframe src="ejemplos_practicos/cliente.html"></iframe>
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                </article>
+                <div class="ReguladorFlujo"></div>
+            </section>
+        </main>
+        <footer class="Pie">
+            <div class="PieDiv">
+                <p>Webmaster:</p>
+                <p>Leonardo Moreno Pinto (<a href="https://github.com/Lempi4K" target="_blank">Lempi4K</a>)</p>
+            </div>
+            <div class="PieDiv">
+                <p>Semestre y Grupo:</p>
+                <p>4-N</p>
+            </div>
+            <div class="PieDiv">
+                <p>Escuela:</p>
+                <p><a href="http://www.cbtis114.edu.mx/" target="_blank">C.B.T.I.S. #114</a></p>
+            </div>
+            <div class="ReguladorFlujo" style="margin:0px;"></div>
+            <div>
+                <p>&copy; Todos los derechos reservados 2022 | Enciclopedia 4K | Cd. Juarez, Chihuahua, Mexico</p>
+            </div>
+        </footer>
+    </div>
+    <div id="SBArriba"></div>
+    <div class="E_20px"></div>
+</body>
+</html>

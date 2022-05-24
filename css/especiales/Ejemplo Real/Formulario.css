@@ -1,0 +1,269 @@
+#escena1{
+    width: 300px;
+    position: absolute;
+    height: 313.07px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(8, 26, 55);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(48, 49, 49, 0.5) 5px 5px 5px;
+}
+.OcultosTemp{
+    transition: display 0.5s ease-in-out;
+}
+.formulario{
+    margin: 0 20px
+}
+.Titulo{
+    display: block;
+    margin: 10px 20px
+}
+.Titulo > h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.inpTxt, .inpTxtTT{
+    background-color: white;
+    width: 100%;
+    display: inline-block;
+    margin: 5px 0px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.slct{
+    width: 50%;
+    margin: 5px 0px;
+}
+.inpTxt > .lblInpTxt, .inpTxt > .lblSlct, .inpTxtTT > .lblInpTxt{
+    float:left;
+    color: white;
+    background-color: rgb(14, 195, 90);
+    height: 100%;
+    width: 30%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    line-height: 25px;
+    z-index: 1;
+    transition: width 0.2s ease-in-out;
+}
+.OcultosTemp > .inpTxt > .lblInpTxt > img, .inpTxtTT > .lblInpTxt > img{
+    height: 25px;
+}
+.OcultosTemp > .inpTxt > .lblInpTxt, .inpTxtTT > .lblInpTxt > img{
+    line-height: 0px;
+    padding: 2.5px 0px;
+}
+.inpTxtTT > .lblInpTxt{
+    line-height: 0px;
+}
+.inpTxtTT{
+    width: 70%;
+    margin-left: 70px;
+}
+.inpTxt > input, .inpTxt > textarea, #slctDescuento, .inpTxtTT > input{
+    float:left;
+    width: 70%;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+    position: relative;
+    z-index: 2;
+    resize: none;
+    transition: all 0.2s ease-in-out;
+
+}
+.inpTxt > textarea{
+    height: 30px;
+}
+#inpTxtNumTarjeta{
+    height: 25px;
+}
+#inpTxtNumTarjetaO > .inpTxt > .lblInpTxt > img{
+    height: 20px;
+}
+.slct > #slctDescuento{
+    height: 15px;
+}
+.inpTxt > .lblSlct{
+    line-height: 15px;
+}
+.inpTxt > input:focus, .inpTxt > textarea:focus{
+    width: 100%;
+}
+
+.inpRadioLbl{
+    float: left;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(14, 195, 90);
+    padding: 2.5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.inpRadio{
+    margin: 5px 0;
+    
+}
+#inpTxtNumTarjetaO{
+    width: calc(100% - 35px);
+}
+.OcultosTemp > .inpTxt{
+    margin-bottom: 0px
+}
+.inpRadio > label{
+    position: relative;
+    padding-left: 17px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.inpRadio > label > input{
+    visibility: hidden;
+	position: absolute;
+	right: 0;
+}
+.inpRadio > label > input + i{
+    background: #ffffff;
+    border:2px solid rgba(0,0,0,0.2);
+    position: absolute; 
+    left: 0;
+    top: -1px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    left: 0px;
+}
+.inpRadio > label > input + i:before{
+    content: '';
+	display: block;
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 1.6px;
+	left: 1.6px;
+	background:rgb(14, 195, 90);
+	transition: all 0.25s ease;
+	transform: scale(0);
+	opacity: 0;
+}
+.inpRadio > label > input:checked + i:before{
+	transform: scale(1);
+	opacity: 1;
+}
+.inpRadio > label > input:checked:not(:checked) + i{
+	background: #00ee7b;
+}
+
+.inpChkbx{
+    width: calc(100% - 30px);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px 0;
+    float: left;
+}
+.inpChkbx > label > input{
+    visibility: hidden;
+	position: absolute;
+	right: 0;
+}
+.inpChkbx > label{
+    position: relative;
+    padding-left: 30px;
+    padding-top: 1px;
+}
+.inpChkbx > label > input + i{
+    background: #ffffff;
+    border:2px solid rgba(0,0,0,0.2);
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 26px;
+	height: 15px;
+	border-radius: 15px;
+}
+.inpChkbx > label > input + i:before{
+	content: '';
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: -1px;
+	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+    transition: all 0.25s ease;
+}
+.inpChkbx > label > input:checked + i:before{
+	left: 9px;
+	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+}
+ 
+.inpChkbx > label > input:checked + i{
+	background: #00ee7b;
+}
+.BotonesDecisivos > input, .BotonesConfirmativos > input{
+    background-color: #0b9e57;
+    color: white;
+    padding: 5px;
+    border: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    margin: 5px 0;
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+}
+input[type="text"]:not(#inpTxtTotal):disabled, select:disabled, .inpRadio > label > input:disabled + i:before, .inpChkbx > label > input:disabled + i, textarea:disabled{
+    background-color: #c8c8c8;
+}
+select, .inpRadio > label > input + i:before, .inpChkbx > label > input + i, textarea{
+    transition: all 0.2s ease-in-out;
+}
+.BotonesDecisivos > input:disabled{
+    background-color: #3ea071;
+    color: rgb(211, 211, 211);
+    border: rgb(211, 211, 211) 2px solid;
+
+}
+.BotonesDecisivos > input:enabled{
+    background-color: #0b9e57;
+    color: white;
+    border: white 2px solid;
+}
+.BotonesDecisivos > input:last-child{
+    background-color: #a2ad1f;
+}
+.BotonesConfirmativos > input:first-child{
+    background-color: #ad1f1f;
+}
+.BotonesConfirmativos > input:last-child{
+    margin-right: 0px;
+    background-color: #408835;
+    float: right;
+}
+.BotonesConfirmativos{
+    width: 100%;
+}
+.BotonesDecisivos > input:active, .BotonesConfirmativos > input:active{
+    filter: brightness(0.8);
+}
+
+#inpTxtEnvioO{
+    margin: 0px;
+    width: 100%;
+
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <style>
+        @import url("../../../../css/especiales/Ejemplo Real/ClienteAjustesGlobales.css");
+        @import url("../../../../css/especiales/Ejemplo Real/Formulario.css");
+        @import url("../../../../css/especiales/Ejemplo Real/Ticket.css");
+    </style>
+    <script src="../../../../js/JQuery.js"></script>
+    <script src="../../../../js/JQuery-Masks.js"></script>
+    <script src="../../../../js/Patio de Juegos/cliente/Class_DatosPago.js"></script>
+    <script src="../../../../js/Patio de Juegos/cliente/Cliente.js"></script>
+    <script src="../../../../js/Patio de Juegos/cliente/Cliente_Ticket.js"></script>
+    <script src="../../../../js/Patio de Juegos/cliente/Animaciones.js"></script>
+</head>
+<body>
+    <main>
+        <section class="section">
+            <div id="escena1">
+                <header class="Titulo">
+                    <h1>Pedido</h1>
+                </header>
+                <form class="formulario">
+                    <div class="inpTxt">
+                        <div class="lblInpTxt">Cliente</div>
+                        <input type="text" id="inpTxtCliente" placeholder="Ingresa el cliente">
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                    <div class="inpTxt">
+                        <div class="lblInpTxt">Producto</div>
+                        <input type="text" id="inpTxtProducto" placeholder="Ingresa el producto">
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                    <div class="inpTxt">
+                        <div class="lblInpTxt">Precio</div>
+                        <input type="text" id="inpTxtPrecio" placeholder="0" pattern="[0-9]+">
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                    <div class="inpTxt slct">
+                        <div class="lblSlct">Des.</div>
+                        <select id="slctDescuento">
+                            <option value="0">0%</option>
+                            <option value="0.03">3%</option>
+                            <option value="0.05">5%</option>
+                            <option value="0.08">8%</option>
+                            <option value="0.10">10%</option>
+                        </select>
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                    <div class="inpRadio">
+                        <div class="inpRadioLbl">Tipo de pago:</div>
+                        <label for="inpRdbtnEfectivo">
+                            <input type="radio" id="inpRdbtnEfectivo" name="inpRdbtnPago" value="efectivo" checked>
+                            <i></i>
+                            Efectivo
+                        </label>
+                        <label for="inpRdbtnTarjeta">
+                            <input type="radio" name="inpRdbtnPago" id="inpRdbtnTarjeta" value="tarjeta">
+                            <i></i>
+                            Tarjeta
+                        </label>
+                        <div class="OcultosTemp" id="inpTxtNumTarjetaO">
+                            <div class="inpTxt">
+                                <div class="lblInpTxt">
+                                    <img src="../../../../recursos/img/tarjeta.png">
+                                </div>
+                                <input type="text" id="inpTxtNumTarjeta">
+                                <div class="ReguladorFlujo"></div>
+                            </div>
+                        </div>
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                    <div class="inpChkbx">
+                        <label for="inpCkbxEnvio">
+                            <input type="checkbox" id="inpCkbxEnvio">
+                            Envio a Domicilio 
+                            <i></i>
+                        </label>
+                        <div class="OcultosTemp" id="inpTxtEnvioO">
+                            <div class="inpTxt">
+                                <div class="lblInpTxt">
+                                    <img src="../../../../recursos/img/white-home-icon-logo-home-white-1682583.png">
+                                </div>
+                                <textarea id="inpTxtEnvio"></textarea>
+                            </div>
+                            <div class="ReguladorFlujo"></div>
+                        </div>
+                    </div>
+                    <div class="ReguladorFlujo"></div>
+                    <div class="BotonesDecisivos">
+                        <input type="button" value="Pagar" id="inpBtnPagar" disabled>
+                        <input type="button" value="Restablecer" id="inpBtnRestablecer">
+                    </div>
+                    <div class="OcultosTemp" id="inpTxtTotalO">
+                        <div class="inpTxtTT">
+                            <div class="lblInpTxt"> 
+                                <img src="../../../../recursos/img/dollar_sign_PNG2.png">
+                            </div>
+                            <input type="text" id="inpTxtTotal" disabled>
+                        </div>
+                        <div class="BotonesConfirmativos">
+                            <input type="button" value="Cancelar" id="inpBtnCancelar">
+                            <input type="button" value="Confirmar" id="inpBtnConfirmar">
+                        </div>
+                        <div class="ReguladorFlujo"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="escena2">
+                <div id="Ticket">
+                    <div>
+                        <h1 class="centrado">Pedido</h1>
+                        <h6 class="centrado">Calle Ing. Benjamín Herrera No. 2825, Infonavit Parques Industriales</h6>
+                        <div class="Lineas centrado">
+                            <p>Producto: </p>
+                            <p id="producto_s"></p>
+                        </div>
+                        <div id="Numeros">
+                            <div class="centrado">******************</div>
+                            <div class="Lineas mar1px">
+                                <p>Precio: </p>
+                                <p id="precio_s"></p>
+                            </div>
+                            <div class="Lineas mar1px">
+                                <p>Descuento aplicado: </p>
+                                <p id="descuento_s"></p>
+                            </div>
+                            <div class="Lineas mar1px">
+                                <p>Envio: </p>
+                                <p id="envio_s"></p>
+                            </div>
+                            <div class="ReguladorFlujo"></div>
+                            <div class="centrado total_guiones"></div>
+                            <div class="ReguladorFlujo"></div>
+                            <div class="Lineas mar1px">
+                                <p>Precio Total: </p>
+                                <p id="pTotal_s"></p>
+                            </div>
+                            <div class="centrado">******************</div>
+                        </div>
+                        
+                        <div class="Lineas">
+                            <p>Nombre del cliente: </p>
+                            <p id="cliente_s"></p>
+                        </div>
+                        <div class="Lineas" id="oDomicilio">
+                            <p>Domicilio: </p>
+                            <p id="eDomicilio_s"></p>
+                        </div>
+                        <div class="Lineas">
+                            <p>Tipo de pago: </p>
+                            <p id="tPago_s"></p>
+                        </div>
+                        <div class="Lineas" id="oTarjeta">
+                            <p>Terminacion de tarjeta: </p>
+                            <p id="tTarjeta_s"></p>
+                        </div>
+                        <div class="Lineas">
+                            <p id="fechaHora_s" class="centrado"></p>
+                        </div>
+                        <div class="CodigoBarras">
+                            <img src="../../../../recursos/img/barcode-png.webp" alt="Codigo_De_Barras">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="BarraControl">
+                    <div>
+                        <input type="button" value="Volver" id="inpBtnVolver">
+                    </div>
+                    <div>
+                        <input type="color" value="#ffffff" id="inpColTicket">
+                    </div>
+                    <div>
+                        <input type="button" value="Imprimir" id="inpBtnImprimir">
+                    </div>
+                </div>
+                <div class="ReguladorFlujo"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

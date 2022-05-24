@@ -15,8 +15,13 @@ function botonMandarCS(){
     location.replace("../../index.html");
 }
 
-if(readCookie("fxMatrix")=="10"){
-    document.querySelector("body").style.backgroundColor="rgb(0,0,0)";
-    document.getElementById("chkbxMatrix").checked=true;
-    efectoMatrix()
+function eventos(){
+    document.getElementById("chkbxMatrix").addEventListener("change", chkbxMatrix);
+    
+    if(readCookie("fxMatrix")=="10"){
+        document.getElementById("chkbxMatrix").checked=true;
+        efectoMatrix()
+    }
 }
+
+window.addEventListener("load", eventos);
