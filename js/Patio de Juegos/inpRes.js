@@ -7,6 +7,10 @@ function inpRes(){
     document.getElementById("inpPass").type="password";
     document.getElementById("imgInpRan").style.height = "50%";
     document.getElementById("lblInpNumP").innerHTML = "0";
+    document.getElementById("slctOp").selectedIndex= -1;
+    document.getElementById("btnResu").innerHTML = "Resultado";
+    document.getElementById("otptResultado").innerHTML = "";
+    document.getElementById("mtrBar").value = "50";
 
 }
 function eventos(){

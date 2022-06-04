@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Examen Unidad 2 Moreno Pinto Leonardo 4-N"/>
-    <meta name="keywords" content="Examen, LeonardoMorenoPinto, 4-N, Unidad 2"/>
+    <meta name="description" content="Examen Unidad 3 Moreno Pinto Leonardo 4-N"/>
+    <meta name="keywords" content="Examen, LeonardoMorenoPinto, 4-N, Unidad 3"/>
     <link rel="icon" href="../../../recursos/img/Circulo.png"/>
     <title>Patio de Juegos - Enciclopedia 4K</title>
     <style>
@@ -214,7 +214,7 @@
                     <div class="ArticuloTitulo"><p>Textarea</p></div>
                     <form>
                         <div id="TxtArea">
-                            <textarea placeholder="Ingresa un texto" id="txtArea" r></textarea>
+                            <textarea placeholder="Ingresa un texto" id="txtArea" form="inpForm"></textarea>
                         </div>
                     </form>
                 </article>
@@ -224,10 +224,10 @@
                         <div id="xd">
                             <div class="SlctBtnOtptFlotador">
                                 <div class="numSlctBtnOtpt">
-                                    <input type="number" id="optNum1" value="0">
+                                    <input type="number" id="optNum1" value="0" form="inpForm">
                                 </div>
                                 <div id="slct">
-                                    <select id="slctOp">
+                                    <select id="slctOp" form="inpForm">
                                         <option>+</option>
                                         <option>-</option>
                                         <option>*</option>
@@ -235,7 +235,7 @@
                                     </select>
                                 </div>
                                 <div class="numSlctBtnOtpt">
-                                    <input type="number" id="optNum2" value="0">
+                                    <input type="number" id="optNum2" value="0" form="inpForm">
                                 </div>
                                 <div class="ReguladorFlujo"></div>
                             </div>
@@ -249,7 +249,7 @@
                             <fieldset>
                                 <legend>Salida</legend>
                                 <label for="otptResultado">Resultado: </label>
-                                <output id="otptResultado" for="optnum1 optnum2"></output>
+                                <output id="otptResultado" for="optnum1 optnum2" form="inpForm"></output>
                             </fieldset>
                         </div>
                     </form>
@@ -258,7 +258,7 @@
                     <div class="ArticuloTitulo"><p>Meter</p></div>
                     <form>
                         <div id="mtr">
-                            <meter id="mtrBar" value="50" max="100" min="0" low="30" high="70">50%</meter>
+                            <meter id="mtrBar" value="50" max="100" min="0" low="30" high="70" form="inpForm">50%</meter>
                         </div>
                         <div class="mtrBtns">
                             <input type="button" value="-10" id="btnMtrR10">
@@ -271,7 +271,7 @@
                     <div class="ArticuloTitulo"><p>Progress</p></div>
                     <form>
                         <div id="pgr">
-                            <progress id="pgrBar" value="0" max="100">0%</progress>
+                            <progress id="pgrBar" value="0" max="100" form="inpForm">0%</progress>
                         </div>
                     </form>
                 </article>
